@@ -1,4 +1,9 @@
+Here’s your **final GitHub repository description** for your portfolio 💼✨ (based exactly on your code):
+
+---
+
 ## 🌟 Personal Developer Portfolio – Usama Noor
+
 A modern, responsive, and visually stunning **personal portfolio website** built using **HTML and CSS** 🎨💻. This project showcases my journey as a **Frontend Developer (Beginner)** with a clean UI, smooth layout, and elegant dark luxury theme.
 
 It includes a fully structured design with multiple sections:
