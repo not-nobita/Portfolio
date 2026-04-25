@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #1a002b, #2a0a3d, #120018);
+    color: #f8f8f8;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 0, 20, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    z-index: 1000;
+}
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    color: #ffd700;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0d6ff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 44px;
+    color: #ffd700;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background: #d4af37;
+    color: #1a002b;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd700;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 70px 10%;
+}
+
+h2 {
+    font-family: "Orbitron", sans-serif;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #e6d9ff;
+    max-width: 750px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    padding: 10px 14px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.skill:hover {
+    background: #d4af37;
+    color: #1a002b;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    padding: 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ffd700;
+}
+
+.contact {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.icons a {
+    color: #e0d6ff;
+    transition: 0.3s;
+}
+
+.icons a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #b9a7d9;
+    font-size: 13px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+.project-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-links a:first-child {
+    background: #d4af37;
+    color: #1a002b;
+}
+
+.project-links a:last-child {
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #ffd700;
+}
+
+.project-links a:hover {
+    transform: translateY(-2px);
+}
